@@ -73,7 +73,7 @@ header a img {
   text-align: center;
   color: #fff;
   text-decoration: none;
-  font-family: "mabryproregular";
+  font-family: "mabryproregular", sans-serif;
 }
 
 #burger-con ul li a:hover {
@@ -119,6 +119,50 @@ header a img {
     font-size: 21px;
   }
 }
+h1 {
+  font-family: "candybeansregular", sans-serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  line-height: 44px;
+}
+
+h2 {
+  font-family: "candybeansregular", sans-serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  line-height: 34px;
+}
+
+h3 {
+  font-family: "candybeansregular", sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  line-height: 34px;
+}
+
+p {
+  font-family: "mabryproregular", sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  line-height: 24px;
+}
+
+a ul li {
+  font-family: "mabryproregular", sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  line-height: 24px;
+}
+
 #body {
   background-color: #FFC0CB;
+}
+
+.emotionimg {
+  width: 150px;
 }/*# sourceMappingURL=main.css.map */
