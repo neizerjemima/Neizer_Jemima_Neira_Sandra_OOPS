@@ -164,5 +164,16 @@ a ul li {
 }
 
 .emotionimg {
-  width: 150px;
+  width: 270px;
+}
+
+@media screen and (min-width: 1200px) {
+  .emotionimg {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .emotionimg {
+    width: 200px;
+  }
 }/*# sourceMappingURL=main.css.map */
