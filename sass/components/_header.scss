@@ -1,16 +1,18 @@
 @use '../abstracts' as a;
 
 header {
+
     // background-color: a.$accent-color;
     #header {
-    height: fit-content;
+        height: fit-content;
     }
+
     a img {
         height: 100%;
         // margin: 10px 0 17px 14px; 
         padding-top: 5px;
         padding-left: -20px;
-    }   
+    }
 }
 
 
@@ -22,21 +24,21 @@ header {
     // margin-bottom: 20px;
     transition: all .5s ease;
     border: 0;
- }
+}
 
 
- #Nav-Deskop {
+#Nav-Deskop {
     margin-top: 3px;
     margin-left: 11px;
- }
+}
 
 
- #Nav-Desktop button.expanded {
+#Nav-Desktop button.expanded {
     transform: rotate(90deg);
- }
- 
- #burger-con {
-    margin-top: 20px; 
+}
+
+#burger-con {
+    margin-top: 20px;
     margin-bottom: 20px;
     display: none;
     position: absolute;
@@ -44,7 +46,7 @@ header {
     z-index: 1;
     // background: linear-gradient(0deg, a.$hover-color, a.$primary-color);
 }
- 
+
 #burger-con.slide-toggle {
     display: block;
     left: 0;
@@ -67,12 +69,12 @@ header {
     text-align: center;
     color: a.$text-color;
     text-decoration: none;
-    // font-family: a.$nav-font;
+    font-family: a.$text-font-family;
 }
 
 #burger-con ul li a:hover {
     color: a.$accent-color;
-    // font-family: a.$bold-font;
+    font-family: a.$heading-font-family;
     font-size: 23px;
 }
 
@@ -83,7 +85,7 @@ header {
 
     }
 
-    #header img { 
+    #header img {
         height: 60%;
         margin-top: 15px;
         margin-left: 17px;
@@ -92,12 +94,14 @@ header {
     #burger-con {
         display: contents;
         position: relative;
-        height: 0;      
+        height: 0;
 
-        ul li a { display: inline;}
+        ul li a {
+            display: inline;
+        }
     }
 
- 
+
     #Nav-Desktop {
         margin-top: 53px;
         background-color: a.$accent-color;
@@ -108,6 +112,7 @@ header {
         border-top-left-radius: 12px;
         border-bottom-left-radius: 12px;
         margin-right: -100px;
+
         ul li {
             display: inline;
             margin-right: 27px;
@@ -116,7 +121,7 @@ header {
         ul li a:hover {
             letter-spacing: .5px;
             font-size: 21px;
-        }        
+        }
     }
-    
+
 }
