@@ -1,19 +1,17 @@
 class Mood {
-    //start a class with capital letter for best practice
+  
     constructor(
-        //Define paramaters
         image,
         quote,
         bobaTitle,
         bobaContent
     ) {
-        //Define properties
         this.boba = image;
         this.quote = quote;
         this.bobaTitle = bobaTitle;
         this.bobaContent = bobaContent
     }
-    // Add methods like normal functions:
+
     boBa() {
         const div = document.createElement("div");
 
@@ -26,10 +24,15 @@ class Mood {
         quote.textContent = `Don't cry drink boba and have fun`;
         div.appendChild(quote);
 
-        const recipeSteps = this.bobaContent.split(",");
+        const heading = document.createElement("h3");
+        heading.textContent = this.bobaTitle;
+        div.appendChild(heading);
+
+        const recipeSteps = this.bobaContent.split("."); //- This will split it just like we use in PushSubscription.
         const ul = document.createElement("ul");
         recipeSteps.forEach(step => {
             const li = document.createElement("li");
+            li.textContent = step;
             ul.appendChild(li);
         });
         div.appendChild(ul);
