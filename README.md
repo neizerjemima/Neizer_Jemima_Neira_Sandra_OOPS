@@ -15,7 +15,7 @@ Open index.html in your browser choice.
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 ## History
->Thinking of creating a fun site but still not a game, we decide to create this boba choice generator.
+>Thinking of creating an interesting site using OOP JS but still not a game, we decide to create this boba choice generator.
 ## Credits
 Sandra Paola Neira (San) Jemima Neizer (Jay)
 ## License
