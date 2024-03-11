@@ -1,8 +1,7 @@
 # BOBA TIME 
 
-Get a boba according with your mood, are you feeling sad, happy ..., it's okay this site will have the perfect choice for you!
+Get a boba according to your mood, are you feeling sad, or happy ..., it's okay this site will have the perfect choice for you!
 
-![image](./images/logo.png)
 ![image](./images/allflavours.png)
 
 ## Installation
@@ -16,7 +15,7 @@ Open index.html in your browser choice.
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 ## History
->Thinking of creating a fun site but still no a game, we decide to create this boba choice generator.
+>Thinking of creating a fun site but still not a game, we decide to create this boba choice generator.
 ## Credits
 Sandra Paola Neira (San) Jemima Neizer (Jay)
 ## License
