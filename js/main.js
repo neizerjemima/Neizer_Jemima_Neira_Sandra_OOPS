@@ -1,6 +1,7 @@
-import { Mood } from "./boba.js";
-// import { openLightbox, closeLightbox } from "./lightbox.js";
+// import { scroll } from "./lightbox.js";
+// scroll();
 
+import { Mood } from "./boba.js";
 
 const joy = new Mood(
     "brownsugar.png",
@@ -20,14 +21,14 @@ const angry = new Mood(
     "rose.png",
     "Keep Calm and Drink Boba tea-Angry",
     "Matcha",
-    "Steep dried rose petals in hot water for 5-7 minutes to make rose tea. Strain and let it cool.Cook tapioca pearls according to package instructions and let them cool.Fill a glass with ice cubes.Pour rose tea and milk over the ice.Add cooked tapioca pearls (boba) into the glass"
+    "Steep dried rose petals in hot water for 5-7 minutes to make rose tea.Strain and let it cool.Cook tapioca pearls according to package instructions and let them cool.Fill a glass with ice cubes,pour rose tea and milk over the ice.Add cooked tapioca pearls (boba) into the glass"
 );
 
 const disgust = new Mood(
     "mango.png",
     "I run on Boba and Disgust - Digust",
     "Passion Fruit",
-    "In a small saucepan, combine brown sugar and water. Heat over medium heat, stirring occasionally, until the sugar is completely dissolved to make brown sugar syrup.Let it cool.Cook tapioca pearls according to package instructions and let them cool.Fill a glass with ice cubes.Pour milk over the ice.Add cooked tapioca pearls(boba) into the glass"
+    "In a small saucepan, combine brown sugar and water.Stir occasionally over medium heat until the sugar is completely dissolved to make a syrup.Cook tapioca pearls according to package instructions and let them cool.Fill a glass with ice cubes and pour milk over the ice.Add cooked tapioca pearls(boba) into the glass"
 );
 
 
@@ -42,7 +43,7 @@ const allEmotions = new Mood(
     "passionfruit.png",
     "Can't Decide Fix it with BOBA -All",
     "Brown Sugar",
-    "Blend the ripe mango chunks, mango juice, milk, and sweetener in a blender until smooth.Cook the tapioca pearls according to package instructions and let them cool.Add ice cubes to a glass.Pour the mango mixture over the ice.Add cooked tapioca pearls (boba) into the glass"
+    "Blend the ripe mango chunks, mango juice, milk, and sweetener in a blender until smooth.Cook the tapioca pearls according to package instructions and let them cool.Add ice cubes to a glass .Pour the mango mixture over the ice.Add cooked tapioca pearls (boba) into the glass"
 );
 
 // console.log(joy);
