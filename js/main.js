@@ -1,4 +1,6 @@
 import { Mood } from "./boba.js";
+// import { openLightbox, closeLightbox } from "./lightbox.js";
+
 
 const joy = new Mood(
     "brownsugar.png",
@@ -44,9 +46,46 @@ const allEmotions = new Mood(
 );
 
 // console.log(joy);
-joy.boBa();
-sad.boBa();
-disgust.boBa();
-angry.boBa();
-fear.boBa();
-allEmotions.boBa();
+// joy.boBa();
+// sad.boBa();
+// disgust.boBa();
+// angry.boBa();
+// fear.boBa();
+// allEmotions.boBa();
+
+
+
+// Store references to all emotion images
+const emotionImages = document.querySelectorAll('.emotionimg');
+
+// Add click event listener to each emotion image
+emotionImages.forEach(image => {
+    image.addEventListener('click', () => {
+        // Get the mood of the clicked image
+        const mood = image.dataset.mood;
+        // Open the corresponding boba in lightbox
+        switch (mood) {
+            case 'joy':
+                joy.boBa();
+                break;
+            case 'sad':
+                sad.boBa();
+                break;
+            case 'angry':
+                angry.boBa();
+                break;
+            case 'disgust':
+                disgust.boBa();
+                break;
+            case 'fear':
+                fear.boBa();
+                break;
+            case 'all':
+                allEmotions.boBa();
+                break;
+        }
+    });
+});
+
+
+

@@ -1,5 +1,5 @@
 class Mood {
-  
+
     constructor(
         image,
         quote,
@@ -19,7 +19,7 @@ class Mood {
 
         const image = document.createElement("img");
         image.src = `images/${this.boba}`;
-        image.alt = this.bobaTitle; 
+        image.alt = this.bobaTitle;
         image.classList.add("bobaImg")
         div.appendChild(image);
 
@@ -43,7 +43,27 @@ class Mood {
         });
         div.appendChild(ul);
         document.body.appendChild(div);
+
+        const button = document.createElement("button");
+        button.textContent = "New Mood";
+        button.classList.add("button");
+        button.classList.add("box-center");
+
+        const button2 = document.createElement("button");
+        button2.textContent = "Order Now";
+        button2.classList.add("bbutton");
+        button2.classList.add("box-center");
+
+        div.appendChild(button);
+        div.appendChild(button2);
+
+
+        button.addEventListener('click', () => {
+            div.remove();
+        });
+
     }
+
 }
 
 
