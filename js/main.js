@@ -1,92 +1,10 @@
-// import { scroll } from "./lightbox.js";
-// scroll();
 
-import { Mood } from "./boba.js";
+import { behave } from "./behave.js";
+import { mood } from "./mood.js";
+import { scroll } from "./gsap.js";
+scroll();
 
-const joy = new Mood(
-    "brownsugar.png",
-    "My Happy Place is inside my Boba Cup-Happy",
-    "Taro",
-    "Blend the cooked taro chunks, milk, and honey (or sugar) in a lender until smooth.Add ice cubes to a glass.Pour the taro milk mixture over the ice.Add cooked tapioca pearls (boba) into the glass.Stir gently and serve with a wide straw"
-);
-
-const sad = new Mood(
-    "tarro.png",
-    "You can't buy happiness BUT You can buy boba - Sad",
-    "Mango",
-    "Blend the passion fruit pulp, chilled brewed black tea, milk, and sweetener until smooth.Cook the tapioca pearls according to package instructions and let them cool.Fill a glass with ice cubes.Pour the passion fruit tea mixture over the ice.Add cooked tapioca pearls (boba) into the glass"
-);
-
-const angry = new Mood(
-    "rose.png",
-    "Keep Calm and Drink Boba tea-Angry",
-    "Matcha",
-    "Steep dried rose petals in hot water for 5-7 minutes to make rose tea.Strain and let it cool.Cook tapioca pearls according to package instructions and let them cool.Fill a glass with ice cubes,pour rose tea and milk over the ice.Add cooked tapioca pearls (boba) into the glass"
-);
-
-const disgust = new Mood(
-    "mango.png",
-    "I run on Boba and Disgust - Digust",
-    "Passion Fruit",
-    "In a small saucepan, combine brown sugar and water.Stir occasionally over medium heat until the sugar is completely dissolved to make a syrup.Cook tapioca pearls according to package instructions and let them cool.Fill a glass with ice cubes and pour milk over the ice.Add cooked tapioca pearls(boba) into the glass"
-);
-
-
-const fear = new Mood(
-    "matcha.png",
-    "A Boba a Day keeps Fear Away - Fear",
-    "Rose",
-    "Dissolve matcha powder in hot water in a small bowl and let it cool to room temperature.Cook tapioca pearls according to package instructions and let them cool.Fill a glass with ice cubes.Pour cooled matcha mixture and milk over the ice.Add cooked tapioca pearls (boba) into the glass"
-);
-
-const allEmotions = new Mood(
-    "passionfruit.png",
-    "Can't Decide Fix it with BOBA -All",
-    "Brown Sugar",
-    "Blend the ripe mango chunks, mango juice, milk, and sweetener in a blender until smooth.Cook the tapioca pearls according to package instructions and let them cool.Add ice cubes to a glass .Pour the mango mixture over the ice.Add cooked tapioca pearls (boba) into the glass"
-);
-
-// console.log(joy);
-// joy.boBa();
-// sad.boBa();
-// disgust.boBa();
-// angry.boBa();
-// fear.boBa();
-// allEmotions.boBa();
-
-
-
-// Store references to all emotion images
-const emotionImages = document.querySelectorAll('.emotionimg');
-
-// Add click event listener to each emotion image
-emotionImages.forEach(image => {
-    image.addEventListener('click', () => {
-        // Get the mood of the clicked image
-        const mood = image.dataset.mood;
-        // Open the corresponding boba in lightbox
-        switch (mood) {
-            case 'joy':
-                joy.boBa();
-                break;
-            case 'sad':
-                sad.boBa();
-                break;
-            case 'angry':
-                angry.boBa();
-                break;
-            case 'disgust':
-                disgust.boBa();
-                break;
-            case 'fear':
-                fear.boBa();
-                break;
-            case 'all':
-                allEmotions.boBa();
-                break;
-        }
-    });
-});
-
+const instances = behave();
+mood(instances);
 
 

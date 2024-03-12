@@ -66,6 +66,4 @@ class Mood {
 
 }
 
-
-
 export { Mood };
