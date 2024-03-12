@@ -1,12 +1,13 @@
-// export function scroll () {
+
+export function scroll () {
     let clicked = document.querySelectorAll('.emotionimg');
     function view() {
-      gsap.to(window, { scrollTo:".bobaCon", duration:.1 });
+      gsap.to(window, { scrollTo:".bobaCon", duration:.3 });
     } 
     clicked.forEach(item => {
       item.addEventListener('click', view);
     });
-// }
+}
 
 
 // const count = 5;
