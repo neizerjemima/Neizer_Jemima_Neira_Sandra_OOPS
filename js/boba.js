@@ -24,7 +24,7 @@ class Mood {
         div.appendChild(image);
 
         const quote = document.createElement("p");
-        quote.textContent = `Don't cry drink boba and have fun`;
+        quote.textContent = this.quote;
         quote.classList.add("bobaQuote")
         div.appendChild(quote);
 

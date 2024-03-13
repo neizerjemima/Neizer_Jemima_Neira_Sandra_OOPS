@@ -1,27 +1,26 @@
 @use '../abstracts' as a;
 
 header {
-
+    position: absolute;
+    z-index: 2;
     // background-color: a.$accent-color;
     #header {
         height: fit-content;
     }
 
     a img {
-        height: 100%;
-        // margin: 10px 0 17px 14px; 
-        padding-top: 5px;
-        padding-left: -20px;
+        height: 71%;
+        margin: 6px 6px 8px 11px; 
     }
 }
 
 
 #Nav-Desktop button {
-    width: 32px;
-    height: 27px;
+    width: 79px;
+    height: 18px;
     background: url(../images/moblie.svg) no-repeat center;
     margin-top: 20px;
-    // margin-bottom: 20px;
+    margin-left: 20px;
     transition: all .5s ease;
     border: 0;
 }
@@ -86,11 +85,11 @@ header {
     }
 
     #header img {
-        height: 60%;
+        height: 100%;
         margin-top: 15px;
         margin-left: 17px;
     }
-
+    
     #burger-con {
         display: contents;
         position: relative;
@@ -111,11 +110,11 @@ header {
         height: 70px;
         border-top-left-radius: 12px;
         border-bottom-left-radius: 12px;
-        margin-right: -100px;
+        margin-right: 4px;
 
         ul li {
             display: inline;
-            margin-right: 27px;
+            margin-right: 8px;
         }
 
         ul li a:hover {
@@ -126,10 +125,17 @@ header {
 
 }
 @media screen and (min-width: 1200px) {
-    #Nav-Desktop { margin-right: -25px;}       
+    #Nav-Desktop { 
+        margin-right: -12px;
+        margin-left: 36px;
+    }        
 
 }
 @media screen and (min-width: 1920px) {
-    #Nav-Desktop { margin-right: -28px;}       
+    #Nav-Desktop { 
+        margin-right: 3px;
+        padding-left: 64px;
+        margin-left: 157px;
+    }       
 
 }
