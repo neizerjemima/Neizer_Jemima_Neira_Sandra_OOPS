@@ -2,23 +2,21 @@
 
 .bobaCon {
     margin: 20px;
-    // padding: 40px;
-    border: 1px solid a.$primary-color;
-    border-radius: 5px;
-    background-color: a.$accent-color;
+    background-color: #61B1AE;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
 }
 
 
 
-.bobaRecipe {
-    list-style-type: disc;
-    padding: 0;
-}
+// .bobaRecipe {
+//     list-style-image: url(../images/8864305.png) no-repeat center;
+//     padding: 0;
+// }
 
-.bobaRecipe li {
-    margin-bottom: 5px;
-}
+// .bobaRecipe li {
+//     margin-bottom: 5px;
+//     list-style-image: url(../images/8864305.png) no-repeat center;
+// }
 
 html, body {
     height: 100%;

@@ -7,6 +7,12 @@ export function scroll () {
     clicked.forEach(item => {
       item.addEventListener('click', view);
     });
+
+    let start = document.querySelector('#start');
+    function review() {
+      gsap.to(window, { scrollTo:".all", duration:.3 });
+    } 
+    start.addEventListener('click', review);
 }
 
 
