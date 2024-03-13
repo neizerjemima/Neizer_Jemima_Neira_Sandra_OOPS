@@ -2,7 +2,7 @@
 
 Get a boba according to your mood, are you feeling sad, or happy ..., it's okay this site will have the perfect choice for you!
 
-![image](./images/allflavours.png)
+![image](./dist/images/allflavours.png)
 
 ## Description
 
